@@ -1,6 +1,5 @@
 #import needed modules
 import gspread
-import pandas as pd
 import pygsheets
 from oauth2client.service_account import ServiceAccountCredentials
 scope = ['https://spreadsheets.google.com/feeds',
@@ -30,10 +29,6 @@ for item in s:
 for item in s:
 	i=i+1
 	sh.update_cell(i,1,item)
-df=pd.DataFrame(s)
-#sh.update_cells(s)
-#store all the records of spreadsheet
-#tele = sh.get_all_records()
 print(sh.get_all_values())
 
 
