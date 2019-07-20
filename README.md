@@ -4,7 +4,7 @@
 Description 
  In this project we take an image of the document and extract Name,Address , Date of Birth and store it in Google Spreadsheet using Python.
 
-The Document we’re using here is a Driving License.
+The Document we’re using here is a Passport.
 Modules used:
 gspread
 pygsheets
