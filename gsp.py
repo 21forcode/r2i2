@@ -47,22 +47,16 @@ l= len(s);
 for i in range (l):
 	item=s[i]
 	if item.find('Surname')>=0 or s[i].find('Sumame')>=0:
-		print (s[i+1])
 		osh.update_cell(1,3,s[i+1])
 	if item.find('Names')>=0:
-		print(s[i+1])
 		osh.update_cell(1,2,s[i+1])
 	if item.find('INDIAN')>=0:
 		t=s[i].split(' ')
-		print(t[0])
 		osh.update_cell(3,2,t[2])
 		osh.update_cell(4,2,t[0])
-		print(t[2])
 	if item.find('Birth')>=0:
-		print(s[i+1])
-
 		osh.update_cell(5,2,s[i+1])
-		#print(item[(item.find('DOB'))+3:])
+		
 #print all the records of spreadsheet
 for item in osh.get_all_values():
 
